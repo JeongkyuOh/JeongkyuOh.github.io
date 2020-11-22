@@ -1,0 +1,169 @@
+
+* {
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+html, body {
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+
+#main_logo{
+    padding-top:35px;
+    padding-left:20px;
+}
+
+#main_logo img{
+    width: 80px;
+    height: auto;
+}
+
+#content{
+    width: 100%;
+    height:530px;
+    background-color: black;
+    margin-top:-10px;
+    overflow:hidden;
+    position: relative;
+}
+
+.collapse{
+    width:30px;
+}
+#content_box1{
+    width:400px;
+    min-height:300px;
+    position: absolute;
+    left:150px;
+    top:100px;
+}
+#content_box1_header{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    position:absolute;
+    color:#fff;
+    letter-spacing: 1px;
+}
+
+#content_box1_line {
+    width: 50px;
+    border-top: 1px solid #fff;
+    position: relative;
+    top:180px;
+
+}
+#content_box1_sub{
+    color:#fff;
+    position: relative;
+    top:210px;
+    letter-spacing: 1.5px;
+}
+#content_img {
+    position: absolute;
+    left: 900px;
+    top: 50px;
+
+}
+
+#content_img img{
+    width:auto;
+    height:auto;
+
+}
+
+#content2{
+    width: 100%;
+    height:1000px;
+    background-color: white;
+    overflow:hidden;
+    position:relative;
+}
+
+#content2_box1{
+    width:400px;
+    min-height:300px;
+    position: absolute;
+    left:650px;
+    top:100px;
+}
+#content2_box1_header{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    position:absolute;
+    color: #222;
+
+}
+
+#content2_box1_line {
+    width: 50px;
+    border-top: 1px solid #222;
+    position: relative;
+    top:80px;
+
+}
+#content2_box1_sub{
+    color:#222;
+    position: relative;
+    top:110px;
+    letter-spacing: 1.5px;
+}
+
+#content2_box2{
+    width:400px;
+    min-height:300px;
+    position: absolute;
+    left:450px;
+    top:500px;
+}
+#content2_box2_header{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    position:absolute;
+    color: #222;
+}
+
+#content2_box2_line {
+    width: 50px;
+    border-top: 1px solid #222;
+    position: relative;
+    top:80px;
+
+}
+#content2_box2_sub{
+    color:#222;
+    position: relative;
+    top:110px;
+    letter-spacing: 1.5px;
+}
+
+#content2_img1 {
+    position:absolute;
+    left:900px;
+    top:-482px;
+}
+#content2_img2 {
+    position:absolute;
+    left:-150px;
+    top:300px;
+
+}
+
+#content2_img2 img{
+    width:400px;
+    height:auto;
+
+}
+
+#content2_img3 {
+    position:absolute;
+    left:900px;
+    top:502px;
+}

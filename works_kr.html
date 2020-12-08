@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,66 +16,97 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/project.css">
+  <!-- Your custom styles  -->
+  <link rel="stylesheet" href="css/works.css">
+  <!-- adding flag components -->
+  <link href="css/addons/flag.min.css" rel="stylesheet">
 </head>
 <body>
-
   <!-- Start your project here -->
-
+<div id="container">
   <header>
     <nav id="header" class="mb-1 navbar navbar-expand-lg navbar-white white">
-      <a id="main_logo" class="navbar-brand" href="#">
+      <a id="main_logo" class="navbar-brand" href="index_kr.html">
         <img src="img/Jeongkyulogo2.png">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
       aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">About
-            <span class="sr-only"></span>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="#">Projects
-            <span class="sr-only"></span>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="#">Contact
+          <a class="nav-link nav-width" href="index_kr.html">About
             <span class="sr-only"></span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="fab fa-linkedin"></i></a>
+          <a class="nav-link nav-width" href="works_kr.html">Works
+            <div id="underline"></div>
+            <span class="sr-only"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-width" href="contact_kr.html">Contact
+            <span class="sr-only"></span>
+          </a>
+        </li>
+
+        <!-- Icon dropdown -->
+        <div id="icon_dropdown">
+          <!-- Dropdown for EN/KO change -->
+          <li class="nav-item dropdown">
+            <a
+            class="nav-link dropdown-toggle"
+            href="works_kr.html"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+            >
+            <i class="kr flag"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="works_kr.html"
+              ><i class="kr flag"></i>한글
+              <i class="fa fa-check text-success ml-2"></i
+                ></a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="works_en.html"><i class="uk flag"></i>English</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fab fa-github"></i></a>
+            <a class="nav-link" href="https://www.linkedin.com/in/jeongkyu-oh-25b47612b/">
+              <i class="fab fa-linkedin"></i></a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/users/JeongkyuOh/projects/1">
+                <i class="fab fa-github"></i></a>
+              </li>
 
-          </ul>
-        </div>
-      </nav>
-    </header>
-    <section id="content">
-      <div id="project1">
-       <h1>PROJECT&nbsp;1</h1>
-      </div>
-      <span id="content_img">
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section id="content">
+        <div id="project1">
+         <h1>PROJECT&nbsp;1</h1>
+       </div>
+       <span id="content_img">
         <img src="img/Ring_orange.png">
       </span>
     </section>
 
 
 
-<footer>
+    <footer>
 
-</footer>
+    </footer>
 
 
 
@@ -96,6 +127,6 @@
 
 
     </script>
-
+</div>
   </body>
   </html>

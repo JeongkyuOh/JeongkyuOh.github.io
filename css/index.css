@@ -172,6 +172,7 @@ html, body {
 }
 
 #content2_box2_header {
+    margin-top:5px;
     font-size: 50px;
     font-weight: 600;
     line-height: 50px;
@@ -183,13 +184,13 @@ html, body {
     width: 50px;
     border-top: 1px solid #222;
     position: relative;
-    top:70px;
+    top:75px;
 
 }
 #content2_box2_sub {
     color:#222;
     position: relative;
-    top:95px;
+    top:100px;
     letter-spacing: 1.5px;
 }
 

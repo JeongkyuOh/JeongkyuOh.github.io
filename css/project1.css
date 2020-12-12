@@ -1,14 +1,14 @@
 
 * {
-    font-family: 'Inter', sans-serif;
-
+    font-family: 'inter', sans-serif;
 }
 
+
 html, body {
-    margin: auto;
-    padding: 0;
-    max-width: 1920px;
-    height: 100%;
+    margin:auto;
+    padding:0;
+    max-width:1920px;
+    height:100%;
 }
 
 .navbar { box-shadow: none !important; }
@@ -17,31 +17,30 @@ html, body {
 .btn { box-shadow: none !important; }
 
 #container {
-    max-width: 1194px;
+    max-width:1194px;
     height: 100%;
     margin: auto;
-    }
-
+}
 
 #header {
-    height: 100px;
-  }
+    height:100px;
+}
 
 .nav-link {
     color: black;
-   }
-
-   #main_logo {
-    padding-top: 35px;
-    padding-left: 20px;
 }
 
-#main_logo img {
+#main_logo {
+    padding-top:35px;
+    padding-left:20px;
+}
+
+#main_logo img{
     width: 80px;
     height: auto;
 }
 
-.nav-item {
+.nav-item{
     text-align: center;
 }
 
@@ -50,77 +49,51 @@ html, body {
 }
 
 #icon_dropdown {
-    width: 141px;
-    height: auto;
-    display: inline-block;
+    width:141px;
+    height:auto;
+    display:inline-block;
     margin-left: 20px;
 }
 
 #icon_dropdown li {
-   display: inline-block;
+ display: inline-block;
 }
 
 
 #underline {
-    width: 23px;
+    width:23px;
     height: 8px;
     border-bottom: black solid 1px;
     position: relative;
-    left: 23px;
+    left: 30px;
 }
 
 #content {
-    width: 100%;
-    height: 600px;
+    width:100%;
+    min-height:600px;
     background-color: white;
-    margin-top: -10px;
-    overflow: hidden;
+    margin-top:-10px;
+    overflow:hidden;
     position: relative;
-}
-
-#content_box {
-    width: 500px;
-    position: relative;
-    left: 150px;
-    top: 130px;
-}
-
-#box_header h1{
-    font-size: 50px;
-    font-weight: 700;
-}
-
-#box_email {
-    font: color:black;
-}
-
-#box_line {
-    width: 80px;
-    border-top: 1px solid black;
-    position: relative;
-    top: 10px;
-}
-
-#box_sub {
-    width: 500px;
-    position: relative;
-    top: 30px;
-}
-
-#box_contact{
-    position: relative;
-    top: 60px;
 }
 
 #content_img {
     position: absolute;
-    left: 780px;
-    top: 100px;
+    right: -300px;
+    top: 250px;
 }
 
-#content_img img{
-    width: 600px;
-    height: 600px;
+#content_img img {
+    width:600px;
+    height:600px;
+}
+
+#project01{
+    font-family: helvetica;
+    font-size: 300px;
+    font-weight: bold;
+    position:relative;
+    left: -75px;
 }
 
 #footer {

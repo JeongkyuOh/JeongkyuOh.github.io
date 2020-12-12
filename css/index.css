@@ -39,6 +39,7 @@ html, body {
     width: 120px;
 }
 
+
 #icon_dropdown {
     width:141px;
     height:auto;
@@ -74,7 +75,7 @@ html, body {
 }
 
 #content_box1 {
-    width:550px;
+    width:560px;
     min-height:300px;
     position: relative;
     left:150px;
@@ -269,6 +270,23 @@ html, body {
     font-size: 18px;
 }
 
-/*.gotop a i{
-    font-size: 15px;
-}*/
+/* 상위로 보내주는 버튼*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 65px; /* Place the button at the bottom of the page */
+  right: 10px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+/*  background-color: ;  Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  border-radius: 25px; /* Rounded corners */
+  font-size: 15px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}

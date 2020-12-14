@@ -71,7 +71,7 @@ html, body {
 
 #content {
     width: 100%;
-    height: 600px;
+    height: 510px;
     background-color: white;
     margin-top: -10px;
     overflow: hidden;
@@ -114,8 +114,8 @@ html, body {
 
 #content_img {
     position: absolute;
-    left: 780px;
-    top: 100px;
+    right: -186px;
+    top: 120px;
 }
 
 #content_img img{

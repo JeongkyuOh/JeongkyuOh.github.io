@@ -5,10 +5,10 @@
 
 
 html, body {
-    margin: auto;
-    padding: 0;
-    max-width: 1920px;
-    height: 100%;
+    margin:auto;
+    padding:0;
+    max-width:1920px;
+    height:100%;
 }
 
 .navbar { box-shadow: none !important; }
@@ -22,7 +22,7 @@ html, body {
 }
 
 #header {
-    height: 100px;
+    height:100px;
 }
 
 .nav-link {
@@ -48,9 +48,9 @@ html, body {
 }
 
 #icon_dropdown {
-    width: 141px;
-    height: auto;
-    display: inline-block;
+    width:141px;
+    height:auto;
+    display:inline-block;
     margin-left: 20px;
 }
 
@@ -60,7 +60,7 @@ html, body {
 
 
 #underline {
-    width: 23px;
+    width:23px;
     height: 8px;
     border-bottom: black solid 1px;
     position: relative;
@@ -68,48 +68,33 @@ html, body {
 }
 
 #content {
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
     background-color: white;
-    margin-top: -10px;
-    overflow: hidden;
+    margin-top:-10px;
+    overflow:hidden;
     position: relative;
 }
 
 #content_img {
     position: absolute;
-    right: -250px;
+    right: -300px;
     top: 50px;
 }
 
 #content_img img {
-    width: 550px;
-    height: 550px;
+    width:600px;
+    height:600px;
 }
 
-#project01 {
+#project01{
     font-family: helvetica;
     font-size: 300px;
     font-weight: bold;
-    position: relative;
+    position:relative;
     left: -75px;
     top: -60px;
 }
-
-#phone_image {
-    width: 210px;
-    height: 410px;
-    position: absolute;
-    top: 10px;
-    right: 350px;
-}
-
-#phone_image img {
-    width: 100%;
-    height: 100%;
-}
-
-
 
 /* Project1 */
 #project1 {
@@ -117,6 +102,7 @@ html, body {
     position: absolute;
     left: 300px;
     top: 185px;
+
 }
 
 #project1 h1 {
@@ -139,7 +125,7 @@ html, body {
     font-weight: bold;
 }
 
-/*#project1_langlist {
+#project1_langlist {
     width: 100%;
 
 }
@@ -151,22 +137,76 @@ html, body {
 #project1_content3 {
     width: 223px;
     display: inline-block;
-}*/
+}
 /* project1 box end*/
 
 #content1 {
     width: 100%;
     height: 600px;
-    margin-top: 150px;
+    margin-top: 350px;
 }
 
 #content1_box {
-    max-width: 950px;
+    max-width: 870px;
     height: 520px;
     background-color: #f2f2f2;
-    margin: auto;
+    margin-left: 280px;
+    position: relative;
 }
 
+#content1_box_img{
+    width: 300px;
+    height: 580px;
+  /*  border: 1px solid #f2f2f2*/;
+    position:absolute;
+    left:-50px;
+    top:-50px;
+}
+
+#content1_box_img img{
+    width:100%;
+    height: 100%;
+}
+
+#content2 {
+    width: 100%;
+    height: 600px;
+}
+
+#content2_box {
+    width: 450px;
+    height: 650px;
+    background-color: #f2f2f2;
+    margin-top:30px;
+    margin-left: 230px;
+}
+
+#content3 {
+    width: 100%;
+    height: 650px;
+}
+
+#content3_box {
+    width: 500px;
+    height: 650px;
+    background-color: #f2f2f2;
+    margin-top: 120px;
+    margin-left: 420px;
+
+}
+
+#content4 {
+    width: 100%;
+    height: 800px;
+}
+
+#content4_box {
+    width: 700px;
+    height: 730px;
+    background-color: #f2f2f2;
+    margin:auto;
+    margin-top: 100px;
+}
 
 /* project1 animation*/
 
@@ -234,35 +274,39 @@ h1 {
 #foot_nav {
     width: 100%;
     height: 50px;
+
 }
 
 #foot_nav_left {
     width: 33%;
-    display: inline-block;
+    display:inline-block;
     text-align: left;
-    padding-left: 20px;
+    padding-left:20px;
 }
 
 #foot_nav_left a {
-    color: black;
+    color:black;
     font-family: helvetica;
 }
 
 
+
 #foot_nav_mid {
     width: 33%;
-    display: inline-block;
+    display:inline-block;
     text-align: center;
     font-family: helvetica;
 }
 
 #foot_nav_right {
     width: 33%;
-    display: inline-block;
+    display:inline-block;
     text-align: right;
     font-family: helvetica;
     padding-right: 20px;
 }
+
+
 
 /* footer start*/
 
@@ -270,8 +314,8 @@ h1 {
     width: 100%;
     border-top: 2px solid lightgrey;
   /*  background-color: #f5f5f5;*/
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 
 #copyright {
@@ -283,7 +327,7 @@ h1 {
     display: inline-block;
     font-size: 15px;
     color: #646973;
-    list-style: none;
+    list-style:none;
 }
 
 #copyright li {
@@ -320,7 +364,7 @@ h1 {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 105px; /* Place the button at the bottom of the page */
+  bottom: 65px; /* Place the button at the bottom of the page */
   right: 10px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
@@ -336,6 +380,3 @@ h1 {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
-
-
-/* carousel */

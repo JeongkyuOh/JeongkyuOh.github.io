@@ -13,7 +13,6 @@ html, body {
 
 .navbar { box-shadow: none !important; }
 
-
 .btn { box-shadow: none !important; }
 
 #container {
@@ -34,12 +33,12 @@ html, body {
     padding-left: 20px;
 }
 
-#main_logo img{
+#main_logo img {
     width: 80px;
     height: auto;
 }
 
-.nav-item{
+.nav-item {
     text-align: center;
 }
 
@@ -96,21 +95,6 @@ html, body {
     top: -60px;
 }
 
-#phone_image {
-    width: 210px;
-    height: 410px;
-    position: absolute;
-    top: 10px;
-    right: 350px;
-}
-
-#phone_image img {
-    width: 100%;
-    height: 100%;
-}
-
-
-
 /* Project1 */
 #project1 {
     width: 450px;
@@ -139,33 +123,153 @@ html, body {
     font-weight: bold;
 }
 
-/*#project1_langlist {
-    width: 100%;
 
-}
-#project1_content2 {
-    width: 222px;
-    display: inline-block;
-}
-
-#project1_content3 {
-    width: 223px;
-    display: inline-block;
-}*/
 /* project1 box end*/
+
+
+
+/* phone image in the middle */
+#phone_image1 {
+    width: 210px;
+    height: 410px;
+    position: absolute;
+    top: 420px;
+    right:380px;
+    /*top: 520px;
+    right: 455px;  */
+   /* position: relative;
+    left: 510px;
+    top: 40px;*/
+    background-color: white;
+}
+
+
+#phone_image2 {
+    width: 210px;
+    height: 410px;
+   /* position: absolute;
+    top: 520px;
+    right: 455px;*/  
+    position: relative;
+    left: 510px;
+    top: 40px;
+    background-color: white;
+}
+
+#phone_image1 img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#phone_image2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* phone image in the middle end */
+
+
+
+/* main contents of project1*/
 
 #content1 {
     width: 100%;
-    height: 600px;
+    min-height: 600px;
     margin-top: 150px;
 }
 
-#content1_box {
+/* slider start */
+.container1 {
     max-width: 950px;
-    height: 520px;
-    background-color: #f2f2f2;
+    height: auto;
+   /* background-color: #f2f2f2;*/
     margin: auto;
+    position:relative;
+    overflow:hidden;
+    width:100%;
 }
+
+.slider_container{
+    position: absolute;
+    width:100%; 
+    padding: 0;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.slide img{
+    width: 210px;
+    height: 410px;  
+   /* position: relative;
+    left: 510px;
+    top: 40px;*/
+    background-color: white;
+    margin-right:10px;
+    
+}
+
+.slider_container.animated{
+    -webkit-transition: left .3s ease-in;
+    transition: left .3s ease-in;
+}
+
+/* slider buttons*/
+
+#prev,
+#next{
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translateY(-50%);
+    z-index: 999999;
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+
+#prev.disabled, #next.disabled {display: none;}
+
+#prev {
+
+    font-size: 50px;
+    line-height: middle;
+    text-align: center;
+    padding-top: 10px;
+    margin-left: -380px;
+}
+
+#prev:hover {
+    background-color: #f2f2f2;
+}
+
+#next {
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+    margin-left:356px;
+}
+
+#next:hover {
+    background-color: #f2f2f2;
+}
+
+/* slider end*/
 
 
 /* project1 animation*/
@@ -336,6 +440,3 @@ h1 {
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
-
-
-/* carousel */

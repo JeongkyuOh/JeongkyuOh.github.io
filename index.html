@@ -93,7 +93,8 @@
         <!-- menu finished  -->
       </nav>
     </header>
-    <section id="content">
+
+    <section class="page" id="content">
       <div id="content_box1">
         <div id="content_box1_header">
           Developer.<br>
@@ -109,7 +110,7 @@
         <img src="img/Ring_purpel.png">
       </span>
     </section>
-    <section id="content2">
+    <section class="page" id="content2">
       <div id="content2_box1">
         <div id="content2_box1_date">
           05/2020 - Present
@@ -166,6 +167,9 @@
         <img src="img/Ring_purpel.png">
       </span>
     </section>
+
+
+
     <footer id="footer">
       <div id="copyright">
         <address>
@@ -214,8 +218,11 @@
           <!-- MDB core JavaScript -->
           <script type="text/javascript" src="js/mdb.min.js"></script>
           <!-- Your custom scripts (optional) -->
-          <script type="text/javascript">
+          <!-- onepage plugin -->
+  <!--         <script src="js/plugins/onepage/jquery.onepage-scroll.min.js"></script> -->
 
+
+          <script type="text/javascript">
     //Get the button:
     mybutton = document.getElementById("myBtn");
 
@@ -235,6 +242,27 @@
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
+
+
+  // // onepage code
+  // $(function() {
+  //           /** 섹션들을 묶는 박스에게 플러그인 함수 적용  */
+  //           $(".container").onepage_scroll({
+  //               sectionContainer: ".page",      // 하나의 섹션을 구성하는 클래스이름
+  //               easing: "ease",         // 애니메이션 가속 종류 (ease,linear,ease-in,ease-out,ease-in-out)
+  //               animationTime: 700,     // 재생시간
+  //               pagination: true,       // 페이지 위치 표시여부(화면 오른쪽의 동그란 버튼)
+  //               loop: true,             // 페이지 반복 표시 여부 (3페이지-->1페이지)
+  //               keyboard: true,         // 키보드 처리 여부(방향키에 따른 화면 전환)
+  //               direction: "vertical",  // 스크롤 방향 (vertical=세로, horizontal=가로)
+  //               // beforeMove: function(index) {   // 페이지 이동 전 처리될 콜백함수
+  //               //     var current = $(".menu a").eq(index - 1);
+  //               //     current.addClass('active');
+  //               //     $(".menu a").not(current).removeClass("active");
+  //               // }, 
+  //               // afterMove: function(index) {},  // 페이지 이동 후 처리될 콜백함수
+  //           });
+  //       });
 
 </script>
 </div>

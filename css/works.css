@@ -70,7 +70,7 @@ html, body {
 
 #content {
     width: 100%;
-    min-height: 700px;
+    height: 510px;
     background-color: white;
     margin-top: -10px;
     overflow: hidden;

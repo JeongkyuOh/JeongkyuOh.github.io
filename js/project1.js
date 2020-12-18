@@ -47,8 +47,8 @@ $currentIndex = 0;
 
 	 // 슬라이드 이동 함수
 	 function goToSlide(idx){
-	 	$slideContainer.style.left = -100 * idx + '%';
 	 	$slideContainer.classList.add('animated');
+	 	$slideContainer.style.left = -100 * idx + '%';
 	 	$currentIndex = idx;
 	 }
 
@@ -86,6 +86,24 @@ $currentIndex = 0;
 	 	}
 	 });
 
-	 // 첫번쨰 슬라이드  먼저 보이도록 하기
+	 // 자동 슬라이드
+	 // 4초마다 goToSlide(숫자); 0,1,2,3.....5,0
+	 // setInterval(할일, 시간);
+	 // 함수 = 할일 = function(){ 실제할일 }
+	 // 실제할일
+
+	 setInterval(function(){
+	 	//ci = 0, 1 ,2 ,3
+	 	// ci 0 4초 ni 1 ci 1 4초 n1 2...ci 5 4초 ni 0
+	 	var nextIdx = ($currentIndex + 1) % $slideCount; // %는 나눈 나머지
+
+
+	 	goToSlide(nextIdx);
+
+	 },4000);
+
+
+
+
 
 

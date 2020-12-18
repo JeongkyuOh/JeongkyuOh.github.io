@@ -194,6 +194,7 @@ html, body {
     position: absolute;
     width:100%; 
     padding: 0;
+    left:0;
 }
 
 .slide {
@@ -251,7 +252,7 @@ html, body {
     line-height: middle;
     text-align: center;
     padding-top: 10px;
-    margin-left: -380px;
+    margin-left: -40%;
 }
 
 #prev:hover {
@@ -262,7 +263,7 @@ html, body {
     font-size: 50px;
     padding-top: 10px;
     text-align: center;
-    margin-left:356px;
+    margin-left: 37.5%;
 }
 
 #next:hover {

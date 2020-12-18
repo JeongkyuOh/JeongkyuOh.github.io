@@ -1,6 +1,7 @@
 
 * {
-    font-family: 'inter', sans-serif;
+    font-family: 'inter', Arial, sans-serif;
+    -webkit-font-smoothing: antialised;
 }
 
 
@@ -177,11 +178,12 @@ html, body {
     width: 100%;
     min-height: 600px;
     margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 /* slider start */
 .container1 {
-    max-width: 950px;
+    max-width: 900px;
     height: auto;
    /* background-color: #f2f2f2;*/
     margin: auto;
@@ -195,6 +197,7 @@ html, body {
     width:100%; 
     padding: 0;
     left:0;
+
 }
 
 .slide {
@@ -206,23 +209,54 @@ html, body {
     transform: translateY(-50%);
     text-align: center;
     overflow: hidden;
+    padding-bottom: 50px;
+
 }
 
 
-.slide img{
+.slide img {
+
     width: 210px;
     height: 410px;  
    /* position: relative;
     left: 510px;
     top: 40px;*/
     background-color: white;
-    margin-right:10px;
-    
 }
 
 .slider_container.animated{
     -webkit-transition: left .3s ease-in;
     transition: left .3s ease-in;
+}
+
+.slide h3 {
+    margin-top:30px;
+}
+
+
+/* pager CSS */
+
+.pager{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+
+}
+
+.pager span {
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    text-indent: -9999em;
+    margin: 0 10px; 
+}
+
+.pager span.active {
+    background: #333;
 }
 
 /* slider buttons*/

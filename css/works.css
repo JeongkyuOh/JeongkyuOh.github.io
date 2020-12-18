@@ -1,6 +1,7 @@
 
 * {
     font-family: 'inter', sans-serif;
+     -webkit-font-smoothing: antialised;
 }
 
 

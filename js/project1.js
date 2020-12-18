@@ -16,14 +16,14 @@ $slide = document.querySelectorAll('.slide'),
 $navPrev = document.getElementById('prev'),
 $navNext = document.getElementById('next'),
 $slideHeight = 0,
-$slideCount = $slide.length,  
+$slideCount = $slide.length, 
+$timer = null, 
+$pagerHTML  = '',
+$pager = document.querySelector('.pager'),
+//$pagerBtn = document.querySelectorAll('.pager span'),
 $currentIndex = 0;
 
-
-
  	 // $slideWrap.style.height = '200px';
-
-
  	 //  슬라이드의 높이 확인하여 부모의 높이로 지정하기 - (대상.offsetHeight)
  	 for(var i = 0; i < $slideCount; i++){
 
@@ -38,20 +38,32 @@ $currentIndex = 0;
  	 $slideContainer.style.height = $slideHeight + 'px';
 
 
-
-
 	 // 슬라이드가 있으면 가로로 배열하기
 	 for(var a = 0; a < $slideCount; a++) {
-	 	$slide[a].style.left = a * 100 + '%'; 	
+	 	$slide[a].style.left = a * 100 + '%';
+	 	//<span data-idx="0">1</span>
+	 	// var i = 2; i = i + 2; //$pagerHTML = $pagerHTML + <span".
+	 	$pagerHTML += '<span data-idx="'+ a +'">' + (a+1) + '</span>';  	
+	 	$pager.innerHTML = $pagerHTML;
 	 } 
 
-	 // 슬라이드 이동 함수
+	 var $pagerBtn = document.querySelectorAll('.pager span');
+ 
+
+	 // 슬라이드 이동 함수(go to slide)
 	 function goToSlide(idx){
 	 	$slideContainer.classList.add('animated');
 	 	$slideContainer.style.left = -100 * idx + '%';
 	 	$currentIndex = idx;
-	 }
 
+	 	// 모든 $pagerBtn에 active제거 클릭된 그 요소에만 active 추가
+	 	for(var y = 0; y < $pagerBtn.length; y++){
+	 		$pagerBtn[y].classList.remove('active');
+	 	}
+	 	$pagerBtn[idx].classList.add('active');
+
+	 }//go to slide
+	 goToSlide(0);	
 
 	 // 버튼기능 업데이트 함수
 
@@ -92,18 +104,52 @@ $currentIndex = 0;
 	 // 함수 = 할일 = function(){ 실제할일 }
 	 // 실제할일
 
-	 setInterval(function(){
+
+
+	 // 자동 슬라이드 함수
+	 function startAutoSlide(){
+
+	 	$timer = setInterval(function(){
 	 	//ci = 0, 1 ,2 ,3
 	 	// ci 0 4초 ni 1 ci 1 4초 n1 2...ci 5 4초 ni 0
 	 	var nextIdx = ($currentIndex + 1) % $slideCount; // %는 나눈 나머지
 
-
 	 	goToSlide(nextIdx);
 
-	 },4000);
+	 }, 4000);
+
+	 }
+
+	 startAutoSlide(); 
+
+	 /*
+	 $slideWrap에 마우스가 들어오면 할일, 나가면 할일
+	 */
+
+	 function stopAutoSlide(){
+	 	clearInterval($timer);
+	 };
+
+	 $slideContainer.addEventListener('mouseenter',function(){
+	 	stopAutoSlide();
+	 });
+
+	 $slideContainer.addEventListener('mouseleave',function(){
+	 	startAutoSlide();
+	 });
 
 
-
-
+	 // move slide by pager
+	 for(var x = 0; x < $pagerBtn.length; x++) {
+	 	$pagerBtn[x].addEventListener('click',function(event){
+	 		console.log(event.target);
+	 		// innerText 내용 반환
+	 		// innerHTML 의 태그를 반환
+	 		var pagerNum = event.target.getAttribute('data-idx');
+	 		goToSlide(pagerNum);
+	 		
+	 		
+	 	});
+	 }
 
 

@@ -130,11 +130,11 @@ $currentIndex = 0;
 	 	clearInterval($timer);
 	 };
 
-	 $slideContainer.addEventListener('mouseenter',function(){
+	 $slideWrap.addEventListener('mouseenter',function(){
 	 	stopAutoSlide();
 	 });
 
-	 $slideContainer.addEventListener('mouseleave',function(){
+	 $slideWrap.addEventListener('mouseleave',function(){
 	 	startAutoSlide();
 	 });
 

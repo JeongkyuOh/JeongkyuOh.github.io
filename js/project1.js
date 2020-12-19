@@ -116,7 +116,7 @@ $currentIndex = 0;
 
 	 	goToSlide(nextIdx);
 
-	 }, 4000);
+	 }, 5000);
 
 	 }
 

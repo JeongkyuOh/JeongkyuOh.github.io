@@ -18,7 +18,7 @@ html, body {
 .btn { box-shadow: none !important; }
 
 #container {
-    max-width:1194px;
+    max-width: 1194px;
     height: 100%;
     margin: auto;
 }
@@ -86,6 +86,10 @@ html, body {
 }
 /* Project1 */
 
+#project1 {
+    position: relative;
+}
+
 #project1 h1 {
     font-size:50px;
     font-weight: 700;
@@ -97,10 +101,40 @@ html, body {
     letter-spacing: 1px;
 }
 
+#project1_sub {
+    width: 650px;
+    border-bottom: 2px solid black;
+    text-align: right;
+    /*font-weight: bold;*/
+    font-size: 30px;
+    position: absolute;
+    font-family: helvetica neue;
+    letter-spacing: 3px;
+    bottom: 0px;
+    left: -15px;
+    opacity: 0;
+    font-weight:300;
+    /*left: 35px;*/
+}
+
+#project1_sub:hover {
+    bottom: 13px;
+    opacity:1;
+    left: 0px;
+    -webkit-transition: all 0.5s;
+
+}
+
+/* project 1 end */
+
 /* Project 2 */
 
+#project2 {
+    position: relative;
+}
+
 #project2 h1 {
-    font-size:50px;
+    font-size: 50px;
     font-weight: 700;
 }
 
@@ -110,7 +144,37 @@ html, body {
     letter-spacing: 1px;
 }
 
+#project2_sub {
+    width: 620px;
+    border-bottom: 2px solid black;
+    text-align: right;
+    /*font-weight: bold;*/
+    font-size: 30px;
+    font-weight: 300;
+    position: absolute;
+    font-family: helvetica neue;
+    letter-spacing: 3px;
+    bottom: 0px;
+    left: -15px;
+    opacity: 0;
+    /*left: 35px;*/
+}
+
+#project2_sub:hover {
+    bottom: 13px;
+    opacity:1;
+    left: 0px;
+    -webkit-transition: all 0.5s;
+
+
+}
+
+/* project 2 end */
+
 /* Project 3 */
+#project3 {
+    position: relative;
+}
 
 #project3 h1 {
     font-size:50px;
@@ -123,6 +187,33 @@ html, body {
     letter-spacing: 1px;
 }
 
+#project3_sub {
+    width: 590px;
+    border-bottom: 2px solid black;
+    text-align: right;
+    /*font-weight: bold;*/
+    font-size: 30px;
+    position: absolute;
+    font-family: helvetica neue;
+    letter-spacing: 3px;
+    bottom: 0px;
+    left: -15px;
+    opacity: 0;
+    font-weight: 300;
+    /*left: 35px;*/
+}
+
+#project3_sub:hover {
+    bottom: 13px;
+    opacity:1;
+    left: 0px;
+    -webkit-transition: all 0.5s;
+
+}
+
+/* project 3 end */
+/* Ring image */
+
 #content_img {
     position: absolute;
     right: -186px;
@@ -133,7 +224,9 @@ html, body {
     width:600px;
     height:600px;
 }
+/* Ring image end */
 
+/* footer start */
 #footer {
     width: 100%;
     border-top: 2px solid lightgrey;

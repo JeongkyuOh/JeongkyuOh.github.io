@@ -106,10 +106,10 @@ html, body {
     border-bottom: 2px solid black;
     text-align: right;
     /*font-weight: bold;*/
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     font-family: helvetica neue;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     bottom: 0px;
     left: -15px;
     opacity: 0;
@@ -121,7 +121,7 @@ html, body {
     bottom: 13px;
     opacity:1;
     left: 0px;
-    -webkit-transition: all 0.5s;
+    -webkit-transition: all 1s;
 
 }
 
@@ -149,11 +149,11 @@ html, body {
     border-bottom: 2px solid black;
     text-align: right;
     /*font-weight: bold;*/
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     position: absolute;
     font-family: helvetica neue;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     bottom: 0px;
     left: -15px;
     opacity: 0;
@@ -164,9 +164,7 @@ html, body {
     bottom: 13px;
     opacity:1;
     left: 0px;
-    -webkit-transition: all 0.5s;
-
-
+    -webkit-transition: all 1s;
 }
 
 /* project 2 end */
@@ -192,10 +190,10 @@ html, body {
     border-bottom: 2px solid black;
     text-align: right;
     /*font-weight: bold;*/
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     font-family: helvetica neue;
-    letter-spacing: 3px;
+    letter-spacing: 5px;
     bottom: 0px;
     left: -15px;
     opacity: 0;
@@ -207,7 +205,7 @@ html, body {
     bottom: 13px;
     opacity:1;
     left: 0px;
-    -webkit-transition: all 0.5s;
+    -webkit-transition: all 1s;
 
 }
 

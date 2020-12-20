@@ -142,19 +142,14 @@ html, body {
     height: 410px;
     position: absolute;
     left: 520px;
-    top: 35px;
+    top: 30px;
     /*top: 520px;
     right: 455px;  */
    /* position: relative;
     left: 510px;
     top: 40px;*/
-    background-color: white;
     z-index: 10;
-
-
-
 }
-
 
 #phone_image2 {
     width: 210px;
@@ -165,7 +160,6 @@ html, body {
     position: absolute;
     top: -50px;
     right:380px;
-    background-color: white;
 }
 
 #phone_image1 img {

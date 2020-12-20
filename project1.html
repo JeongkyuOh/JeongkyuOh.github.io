@@ -20,7 +20,6 @@
  	<link rel="stylesheet" href="css/project1.css">
  	<!-- adding flag components -->
  	<link href="css/addons/flag.min.css" rel="stylesheet">
-
  </head>
  <body>
  	<!-- Start your project here -->
@@ -251,7 +250,7 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript" src="js/plugins/superslides/jquery.easing.1.3.js"></script>
-  <script src='plugins/animate/jquery.animatecss.min.js'></script>
+  <script src='js/plugins/animate/jquery.animatecss.min.js'></script>
 
 
   <script type="text/javascript">
@@ -279,20 +278,30 @@ mybutton = document.getElementById("myBtn");
 
 $(function() {
             // 페이지 실행 후 즉시 1초동안
-            $("#project1 h1").animateCSS('bounceInUp', {
-                duration: 1000
+            $("#project1 h1").animateCSS('fadeInDown', {
+                duration: 2000
             });
 
             // 페이지 실행 0.5초 후 0.8초동안
-            $("#project1_line").animateCSS('bounceInUp', {
-                duration: 800,
-                delay: 500
+            $("#project1_line").animateCSS('fadeInLeft', {
+                duration: 2000,
+                // delay: 500
             });
             // 페이지 실행 0.8초 후 1.3초동안
-            $("#project1_content1").animateCSS('bounceInUp', {
-                duration: 1300,
-                delay: 800
+            $("#project1_content1").animateCSS('fadeInUp', {
+                duration: 2000,
+                // delay: 800
             });
+
+            $("#phone_image1").animateCSS('fadeInRight', {
+                duration: 3000,
+                // delay: 800
+            });
+
+            // $("#phone_image2").animateCSS('fadeInDown', {
+            //     duration: 2000,
+            //     // delay: 800
+            // });
         });
 
 </script>

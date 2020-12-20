@@ -228,6 +228,7 @@
           <!-- MDB core JavaScript -->
           <script type="text/javascript" src="js/mdb.min.js"></script>
           <!-- Your custom scripts (optional) -->
+          <script src='js/plugins/animate/jquery.animatecss.min.js'></script>
           <script type="text/javascript">
   //Get the button:
     mybutton = document.getElementById("myBtn");
@@ -249,6 +250,35 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
+   // 애니메이션 처리
+
+$(function() {
+  
+            $("#content_box1_header").animateCSS('fadeInDown', {
+                duration: 2000
+            });
+
+            
+            $("#content_box1_line").animateCSS('fadeInLeft', {
+                duration: 2000,
+                // delay: 500
+            });
+
+            $("#content_box1_sub").animateCSS('fadeInUp', {
+                duration: 2000,
+                // delay: 800
+            });
+
+            // $("#phone_image1").animateCSS('fadeInRight', {
+            //     duration: 2000,
+            //     // delay: 800
+            // });
+
+            // $("#phone_image2").animateCSS('fadeInDown', {
+            //     duration: 2000,
+            //     // delay: 800
+            // });
+        });
 
 </script>
 </div>

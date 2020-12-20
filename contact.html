@@ -161,7 +161,39 @@
           <!-- MDB core JavaScript -->
           <script type="text/javascript" src="js/mdb.min.js"></script>
           <!-- Your custom scripts (optional) -->
+          <script src='js/plugins/animate/jquery.animatecss.min.js'></script>
           <script type="text/javascript">
+
+            // 애니메이션 처리
+
+$(function() {
+  
+            $("#box_header").animateCSS('fadeInUp', {
+                duration: 2000
+            });
+
+            
+            $("#box_line").animateCSS('fadeInLeft', {
+                duration: 2000,
+                // delay: 500
+            });
+
+            $("#box_sub").animateCSS('fadeInDown', {
+                duration: 2000,
+                // delay: 800
+            });
+
+            $("#box_contact").animateCSS('fadeInDown', {
+                duration: 2000,
+                // delay: 800
+            });
+
+            // $("#phone_image2").animateCSS('fadeInDown', {
+            //     duration: 2000,
+            //     // delay: 800
+            // });
+        });
+
 
 
 

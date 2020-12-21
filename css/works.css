@@ -103,22 +103,25 @@ html, body {
 
 #project1_sub {
     width: 650px;
+    height: 65px;
     border-bottom: 2px solid black;
     text-align: right;
+    padding-top: 33px;
     /*font-weight: bold;*/
     font-size: 25px;
     position: absolute;
     font-family: helvetica neue;
     letter-spacing: 5px;
-    bottom: 0px;
+    bottom: -10px;
     left: -15px;
     opacity: 0;
     font-weight:300;
+    vertical-align: bottom;
     /*left: 35px;*/
 }
 
 #project1_sub:hover {
-    bottom: 13px;
+    bottom: 0px;
     opacity:1;
     left: 0px;
     -webkit-transition: all 1s;
@@ -146,22 +149,24 @@ html, body {
 
 #project2_sub {
     width: 620px;
+    height: 65px;
     border-bottom: 2px solid black;
     text-align: right;
+    padding-top: 33px;
     /*font-weight: bold;*/
     font-size: 25px;
     font-weight: 300;
     position: absolute;
     font-family: helvetica neue;
     letter-spacing: 5px;
-    bottom: 0px;
+    bottom: -10px;
     left: -15px;
     opacity: 0;
     /*left: 35px;*/
 }
 
 #project2_sub:hover {
-    bottom: 13px;
+    bottom: 0px;
     opacity:1;
     left: 0px;
     -webkit-transition: all 1s;
@@ -187,14 +192,16 @@ html, body {
 
 #project3_sub {
     width: 590px;
+    height: 65px;
     border-bottom: 2px solid black;
     text-align: right;
+    padding-top: 33px;
     /*font-weight: bold;*/
     font-size: 25px;
     position: absolute;
     font-family: helvetica neue;
     letter-spacing: 5px;
-    bottom: 0px;
+    bottom: -10px;
     left: -15px;
     opacity: 0;
     font-weight: 300;
@@ -202,7 +209,7 @@ html, body {
 }
 
 #project3_sub:hover {
-    bottom: 13px;
+    bottom: 0px;
     opacity:1;
     left: 0px;
     -webkit-transition: all 1s;

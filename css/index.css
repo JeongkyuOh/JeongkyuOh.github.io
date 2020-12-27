@@ -1,7 +1,7 @@
 
 * {
     font-family: 'Inter', sans-serif;
-     -webkit-font-smoothing: antialised;
+    -webkit-font-smoothing: antialised;
 }
 
 
@@ -39,7 +39,24 @@ html, body {
 @media (max-width: 767px){
     #header { 
         height: 100px;
-      
+
+    }
+}
+
+@media (max-width: 479px){
+    #header { 
+        height: 80px;
+
+    }
+}
+
+@media (max-width: 379px){
+    #header { 
+        height: 100px;
+        margin-top: -20px;
+        padding-left:0;
+        padding-right:0;
+
     }
 }
 
@@ -69,7 +86,7 @@ html, body {
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 479px){
     #main_logo img { 
         width: 70px;
 
@@ -115,10 +132,10 @@ html, body {
 }
 
 
-@media(min-width: 768px){
-#language_sm {
-   display: none;
-}
+@media(min-width: 767px){
+    #language_sm {
+     display: none;
+ }
 }
 
 /* menu for responsive end*/
@@ -233,7 +250,7 @@ html, body {
 }
 
 #icon_dropdown li{
- display: inline-block;
+   display: inline-block;
 }
 
 
@@ -255,10 +272,17 @@ html, body {
     position: relative;
 }
 
+@media(max-width:1023px){
+    #content{
+
+    }
+}
+
 .collapse {
     width:30px;
 }
 
+/* main content box starts here-------------*/
 #content_box1 {
     width: 540px;
     min-height: 300px;
@@ -278,24 +302,25 @@ html, body {
 @media (max-width:767px){
     #content_box1 {
         width:350px;
-        left:100px;
+        left:80px;
         top:80px;
     }
 }
 
-@media (max-width:480px){
+@media (max-width:479px){
     #content_box1 {
-        width:300px;
-        left:50px;
-        top:50px;
+        width: 400px;
+        height: 200px;
+        left: 70px;
+        top: 80px;
     }
 }
 
 @media (max-width:375px){
     #content_box1 {
-        width:300px;
-        left:40px;
-        top:30px;
+        width:350px;
+        left:15%;
+        top:90px;
         min-height: 100px;
     }
 }
@@ -315,6 +340,24 @@ html, body {
     }
 }
 
+@media (max-width:767px){
+    #content_box1_header {
+        font-size: 40px;
+    }
+}
+
+@media (max-width:479px){
+    #content_box1_header {
+        font-size: 30px;
+        line-height: 40px;
+    }
+}
+@media (max-width:375px){
+    #content_box1_header {
+        font-size: 27px;
+        line-height: 30px;   
+    }
+}
 #content_box1_header p {
     margin-bottom:0px;
 }
@@ -328,13 +371,55 @@ html, body {
 
 }
 
+@media (max-width:767px){
+    #content_box1_line {
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}
+
+@media (max-width:479px){
+    #content_box1_line {
+        margin-top:15px;
+        margin-bottom:15px;
+    }
+}
+
+@media (max-width:375px){
+    #content_box1_line {
+        margin-top:10px;
+        margin-bottom:15px;
+    }
+}
+
 #content_box1_sub {
     color:#fff;
   /*  position: relative;
-    top:210px;*/
-    letter-spacing: 1.5px;
+  top:210px;*/
+  letter-spacing: 1.5px;
 }
 
+@media (max-width:767px){
+    #content_box1_sub {
+        font-size: 16px;
+        width:350px;   
+    }
+}
+@media (max-width:479px){
+    #content_box1_sub {
+        font-size: 14px;
+        width:350px;
+    }
+}
+
+@media (max-width:375px){
+    #content_box1_sub {
+        font-size: 12px;
+        width:250px;
+    }
+}
+
+/* first Ring start--------------------*/
 #content_img {
     position: absolute;
     right: -186px;
@@ -351,8 +436,8 @@ html, body {
 
 @media (max-width: 1023px){
     #content_img {
-        right: -240px;
-        top: 280px;
+        right: -305px;
+        top: 130px;
 
     }
 }
@@ -365,10 +450,10 @@ html, body {
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 479px){
     #content_img {
         right: -220px;
-        top: 280px;
+        top: 350px;
 
     }
 }
@@ -388,10 +473,19 @@ html, body {
 
 @media (max-width: 1023px){
     #content_img img{
+        width: 600px;
+        height: 600px;
+    }
+}
+
+
+@media (max-width: 874px){
+    #content_img img{
         width: 500px;
         height: 500px;
     }
 }
+
 
 @media (max-width: 767px){
     #content_img img{
@@ -400,12 +494,16 @@ html, body {
     }
 }
 
-@media (max-width: 480px){
+@media (max-width: 479px){
     #content_img img{
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
     }
 }
+
+/* first RING END-----------------*/
+
+/* Content2 part starts here-----------------*/
 #content2 {
     width: 100%;
     min-height: 700px;
@@ -414,6 +512,13 @@ html, body {
     position: relative;
 }
 
+@media (max-width: 375px){
+    #content2 {
+        height: 600px;
+    }
+
+    /* Content2 box1 starts here-------------------------*/
+}
 #content2_box1 {
     width: 500px;
     min-height: 300px;
@@ -443,11 +548,31 @@ html, body {
     }
 }
 
-@media (max-width:480px){
+@media (max-width:479px){
     #content2_box1{
+        width: 400px;
     }
 }
 
+@media (max-width:375px){
+    #content2_box1{
+        width:350px;
+        left:15%;
+        top: 25%;
+        min-height: 100px;
+    }
+}
+
+#content2_box1_date{
+
+    font-family:helvetica;
+}
+
+@media (max-width:375px){
+    #content2_box1_date{
+        font-size: 13px;
+    }
+}
 
 #content2_box1_header{
     margin-top: 5px;
@@ -458,41 +583,71 @@ html, body {
     color: #222;
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
     #content2_box1_header{
-        font-size:40px;
+        font-size: 40px;
     }
 }
 
+@media (max-width:375px) {
+    #content2_box1_header{
+        font-size: 27px;
+    }
+}
+/* content2_box1_header finishes here --------------*/
+/* content2_box1_line starts here--------------*/
 
 #content2_box1_line {
     width: 50px;
     border-top: 1px solid #222;
     position: relative;
     top:75px;
-    margin-top: -5px;
-    margin-bottom: -5px;
+
 }
 
-@media (max-width:768px){
+@media (max-width:767px) {
     #content2_box1_line {
         width:60px;
+        margin-top: -5px;
+        margin-bottom: -5px;
     }
 }
 
+@media (max-width:375px) {
+    #content2_box1_line {
+       margin-top: -15px;
+       margin-bottom: -15px;
+   }
+}
+/* content2_box1_line finishes here------------------*/
+
 #content2_box1_sub {
-    color:#222;
+    color: #222;
     position: relative;
-    top:100px;
+    top: 100px;
     letter-spacing: 1.5px;
 }
 
-@media (max-width:768px){
+
+#content2_box1_sub a {
+    color: #6d0776;
+    font-weight: bold;
+}
+
+@media (max-width:767px){
     #content2_box1_sub {
         width:300px;
         
     }
 }
+
+@media (max-width:375px){
+    #content2_box1_sub {
+        font-size: 12px;
+        
+    }
+}
+
 
 /*language list*/
 #content2_box1_langlist {
@@ -511,12 +666,11 @@ html, body {
 /*language list end*/
 
 
-#content2_box1_sub a {
-    color: #6d0776;
-    font-weight: bold;
-}
 
-#content2_box2 {
+/* content2_box1_finishes here----------------*/
+
+/* content2_box2 starts here-------------------*/
+/*#content2_box2 {
     width:400px;
     min-height:300px;
     position: absolute;
@@ -548,7 +702,11 @@ html, body {
     top: 100px;
     letter-spacing: 1.5px;
 }
+*/
 
+/* content2_box2_finishes here----------------*/
+
+/* Second Ring Starts here --------------------*/
 #content2_img1 {
     position: absolute;
     right: -186px;
@@ -564,8 +722,8 @@ html, body {
 
 @media (max-width: 1023px){
     #content2_img1{
-        right: -240px;
-        top: -302px;
+        right: -305px;
+        top: -452px;
     }
 }
 
@@ -573,6 +731,13 @@ html, body {
     #content2_img1{
         right: -220px;
         top: -302px;
+    }
+}
+
+@media (max-width: 479px){
+    #content2_img1{
+        right: -220px;
+        top: -232px;
     }
 }
 
@@ -590,6 +755,14 @@ html, body {
 
 @media (max-width: 1023px){
     #content2_img1 img {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+
+@media (max-width: 874px){
+    #content2_img1 img {
         width: 500px;
         height: 500px;
     }
@@ -603,6 +776,15 @@ html, body {
 }
 
 
+@media (max-width: 479px){
+    #content2_img1 img {
+        width: 400px;
+        height: 400px;
+    }
+}
+/* Second Ring finishes here-----------------*/
+
+/* Third Ring Starts here--------------------*/
 #content2_img2 {
     position: absolute;
     left: -150px;
@@ -610,7 +792,13 @@ html, body {
 }
 
 
-
+@media (max-width: 375px){
+    #content2_img2 {
+        position: relative;
+        left: -150px;
+        top: 500px;
+    }
+}
 
 #content2_img2 img {
     width: 400px;
@@ -618,79 +806,139 @@ html, body {
 
 }
 
-#content2_img3 {
+@media (max-width: 375px){
+    #content2_img2 img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/* Third Ring finishes here----------------------*/
+/* fourth Ring Starts here-----------------------*/
+/*#content2_img3 {
     position:absolute;
     left: 900px;
     top: 502px;
+    }*/
+
+    /*fourth Ring finishes here--------------------*/
+    #footer {
+        width: 100%;
+        border-top: 2px solid lightgrey;
+        /*  background-color: #f5f5f5;*/
+        padding-top:5px;
+        padding-bottom:5px;
+    }
+
+    #copyright {
+        width: 50%;
+        display: inline-block;
+        position:relative;
+        top:50px;
+    }
+
+    @media (max-width:375px){
+    #copyright {
+        width:100%;
+        text-align:center;
+    
+    }
 }
 
-#footer {
-    width: 100%;
-    border-top: 2px solid lightgrey;
-  /*  background-color: #f5f5f5;*/
-    padding-top:5px;
-    padding-bottom:5px;
+    #copyright address {
+        display: inline-block;
+        font-size: 15px;
+        color: #646973;
+        list-style:none;
+    }
+/*      @media (max-width:375px){
+    #copyright address {
+        display: block;
+    }
+}*/
+
+    #copyright li {
+        display: inline-block;
+    }
+
+    #footer_lang {
+        display: inline-block;
+    }
+
+    #footer_lang i {
+        margin: 10px;
+    }
+
+  /*  @media (max-width:367px){
+    #footer_lang li i {
+        padding: 100px;
+        
+    }
+}*/
+    #footer_icons {
+        width: 49%;
+        text-align: right;
+        display: inline-block;
+        list-style: none;
+    }
+
+       @media (max-width:375px){
+    #footer_icons {
+        width:100%;
+        text-align:center;
+        position:relative;
+        bottom:40px;
+    }
 }
 
-#copyright {
-    width: 50%;
-    display: inline-block;
-}
+    #footer_icons li{
+        display: inline-block;
 
-#copyright address {
-    display: inline-block;
-    font-size: 15px;
-    color: #646973;
-    list-style:none;
-}
+    }
 
-#copyright li {
-    display: inline-block;
-}
 
-#footer_lang {
-    display: inline-block;
-}
 
-#footer_lang i {
-    margin: 10px;
-}
+    #footer_icons li a {
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+        display: inline;
 
-#footer_icons {
-    width: 49%;
-    text-align: right;
-    display: inline-block;
-    list-style: none;
-}
+    }
 
-#footer_icons li{
-    display: inline-block;
+    @media (max-width:375px){
+     #footer_icons li a{
+        font-weight: bold;
+        color: black;
+        font-size: 25px;
+        letter-spacing: 33px;
 
+    }
 }
+    @media(max-width:375px){
+         #footer_icons li a i{
+        width:100%;
+        height:100%;
+        text-align:center;
+    }
+    }
+    /* 상위로 보내주는 버튼*/
+    #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 65px; /* Place the button at the bottom of the page */
+      right: 10px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      /*  background-color: ;  Set a background color */
+      color: black; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 10px; /* Some padding */
+      border-radius: 25px; /* Rounded corners */
+      font-size: 15px; /* Increase font size */
+  }
 
-#footer_icons li a {
-    font-weight: bold;
-    color: black;
-    font-size: 18px;
-}
-
-/* 상위로 보내주는 버튼*/
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 65px; /* Place the button at the bottom of the page */
-  right: 10px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-/*  background-color: ;  Set a background color */
-  color: black; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 10px; /* Some padding */
-  border-radius: 25px; /* Rounded corners */
-  font-size: 15px; /* Increase font size */
-}
-
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
+  #myBtn:hover {
+      background-color: #555; /* Add a dark-grey background on hover */
+  }

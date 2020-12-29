@@ -25,14 +25,48 @@
   <!-- Start your project here -->
   <div id="container">
     <header>
-      <nav id="header" class="mb-1 navbar navbar-expand-lg navbar-white white">
+      <nav id="header" class="mb-1 navbar navbar-expand-md navbar-white white">
         <a id="main_logo" class="navbar-brand" href="index.html">
           <img src="img/Jeongkyulogo2.png">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-        aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <!-- 햄버거와 언어선택지 -->
+        <div id="lang_ham">
+          <div id="language_sm">
+           <li class="nav-item2 dropdown2">
+            <a
+            class="nav-link2 dropdown-toggle"
+            href="index.html"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false">
+            <i class="uk flag"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="index.html">
+                <i class="united kingdom flag"></i>English
+                <i class="fa fa-check text-success ml-2"></i>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="index_kr.html"><i class="kr flag"></i>한글</a>
+            </li>
+          </ul>
+        </li>
+      </div>
+      <!-- 햄버거메뉴 넣기(responsive burger icon menu) -->
+      <div id="hamburger">
+        <button class="burger navbar-toggler" type="button"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarSupportedContent-4">
+        <span class="navbar-toggler-icon">
+        </span>
       </button>
+    </div>
+  </div>
+  <!-- 햄버거와 언어 선택모양 끝 (responsive menu burger icon finished)-->
+     <!-- menu starts -->
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
         <ul class="navbar-nav ml-auto">
@@ -95,6 +129,35 @@
    <!-- icon and dropdown finished  -->
  </ul>
 </div>
+<!-- menu finished -->
+<!-- burger menu  -->
+    <div id="burger_menu">
+      <span id="exit_button">
+        <a id="exit" href="#">x</a>
+      </span>
+      <div id="burger_menu2">
+        <div id="burger_about">
+          <a href="index.html">About</a>
+        </div>
+        <div id="burger_work">
+          <a href="works.html">Work</a>
+        </div>
+        <div id="burger_contact">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div id="burger_icon">
+        <li class="nav-item nav-width2">
+          <a class="nav-link nav-width1 nav-width2" href="https://www.linkedin.com/in/jeongkyu-oh-25b47612b/">
+            <i class="fab fa-linkedin"></i></a>
+          </li>
+          <li class="nav-item nav-width2">
+            <a class="nav-link" href="https://github.com/users/JeongkyuOh/projects/1">
+              <i class="fab fa-github"></i></a>
+            </li>
+          </div>
+        </div>
+        <!-- burger menu -->
 </nav>
 </header>
 <!-- section start -->
@@ -216,7 +279,23 @@ $(function() {
             // });
         });
 
+ //  햄버거메뉴 기능 시작
+  $(function(){
+    /* 햄버거메뉴 클릭*/
 
+    $('#hamburger').click(function(){
+     $('#burger_menu').animate({
+      marginTop:0
+    }, 500);
+   })
+
+    $('#exit').click(function(){
+      $('#burger_menu').animate({
+        marginTop:4000
+      }, 1000);
+    })
+
+  });
 
 </script>
 </div>

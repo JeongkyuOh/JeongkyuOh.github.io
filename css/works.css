@@ -28,6 +28,7 @@ html, body {
     height:100px;
     position: relative;
     height:100px;
+    color:black;
 }
 
 @media (max-width: 1023px){
@@ -366,6 +367,18 @@ html, body {
     font-weight: 700;
 }
 
+@media (max-width:1023px){
+    #project1 h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:1023px){
+    #project1 h1:hover {
+        visibility: hidden;
+    }
+}
+
 @media (max-width:767px){
     #project1 h1 {
         font-size: 40px;
@@ -396,7 +409,6 @@ html, body {
     border-bottom: 2px solid black;
     text-align: right;
     padding-top: 33px;
-    /*font-weight: bold;*/
     font-size: 25px;
     position: absolute;
     font-family: helvetica neue;
@@ -406,17 +418,43 @@ html, body {
     opacity: 0;
     font-weight:300;
     vertical-align: bottom;
-    /*left: 35px;*/
 }
 
-@media (max-width:375px){
-    #project1_sub {
-        font-size: 15px;
-        width: 300px;
-        height:30px;
-        bottom:0;
-        padding-top:0;
 
+@media (max-width:1023px){
+    #project1_sub {
+        font-size: 45px;
+        font-weight: 700;
+        width: 400px;
+        height: 50px;
+        border-bottom: 0px;
+        text-align: left;
+        padding-top: 0px;
+        position: absolute;
+        font-family: helvetica neue;
+        letter-spacing: 0px;
+        left: 0px;
+        bottom:11px;
+        opacity: 0;
+    }
+}
+
+
+@media (max-width: 767px){
+    #project1_sub {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 479px){
+    #project1_sub {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 375px){
+    #project1_sub {
+        font-size: 35px;
     }
 }
 
@@ -427,6 +465,17 @@ html, body {
     -webkit-transition: all 1s;
 
 }
+
+@media (max-width:1023px){
+    #project1_sub:hover{
+        opacity:1;
+        left: 0px;
+        -webkit-transition: all 1.5s;
+
+    }
+}
+
+
 
 /* project 1 end */
 
@@ -439,6 +488,18 @@ html, body {
 #project2 h1 {
     font-size: 50px;
     font-weight: 700;
+}
+
+@media (max-width:1023px){
+    #project2 h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:1023px){
+    #project2 h1:hover {
+        visibility: hidden;
+    }
 }
 
 @media (max-width:767px){
@@ -483,11 +544,55 @@ html, body {
     /*left: 35px;*/
 }
 
+
+@media (max-width:1023px){
+    #project2_sub {
+        font-size: 40px;
+        font-weight: 700;
+        width: 400px;
+        height: 50px;
+        border-bottom: 0px;
+        text-align: left;
+        padding-top: 0px;
+        position: absolute;
+        font-family: helvetica neue;
+        letter-spacing: 0px;
+        left: 0px;
+        bottom:11px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 767px){
+    #project2_sub {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 479px){
+    #project2_sub {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 375px){
+    #project2_sub {
+        font-size: 35px;
+    }
+}
+
+
 #project2_sub:hover {
     bottom: 0px;
     opacity:1;
     left: 0px;
-    -webkit-transition: all 1s;
+    -webkit-transition: all 1.5s;
+}
+
+@media (max-width:1023px){
+    #project2_sub:hover{
+        left: 0px;
+    }
 }
 
 /* project 2 end */
@@ -500,6 +605,18 @@ html, body {
 #project3 h1 {
     font-size:50px;
     font-weight: 700;
+}
+
+@media (max-width:1023px){
+    #project3 h1 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width:1023px){
+    #project3 h1:hover {
+        visibility: hidden;
+    }
 }
 
 @media (max-width:767px){
@@ -544,12 +661,55 @@ html, body {
     /*left: 35px;*/
 }
 
+
+@media (max-width:1023px){
+    #project3_sub {
+        font-size: 40px;
+        font-weight: 700;
+        width: 400px;
+        height: 50px;
+        border-bottom: 0px;
+        text-align: left;
+        padding-top: 0px;
+        position: absolute;
+        font-family: helvetica neue;
+        letter-spacing: 0px;
+        left: 0px;
+        bottom:11px;
+        opacity: 0;
+    }
+}
+
+@media (max-width: 767px){
+    #project3_sub {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 479px){
+    #project3_sub {
+        font-size: 37px;
+    }
+}
+
+@media (max-width: 375px){
+    #project3_sub {
+        font-size: 35px;
+    }
+}
+
 #project3_sub:hover {
     bottom: 0px;
     opacity:1;
     left: 0px;
     -webkit-transition: all 1s;
 
+}
+
+@media (max-width:1023px){
+    #project3_sub:hover{
+        left: 0px;
+    }
 }
 
 /* project 3 end */

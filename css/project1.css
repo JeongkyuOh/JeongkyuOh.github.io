@@ -23,7 +23,41 @@ html, body {
 
 
 #header {
+    width: 100%;
+    background-color: black;
+    position: relative;
     height: 100px;
+
+}
+
+@media (max-width: 1023px){
+    #header { 
+        height: 100px; 
+    }
+}
+
+@media (max-width: 767px){
+    #header { 
+        height: 100px;
+
+    }
+}
+
+@media (max-width: 479px){
+    #header { 
+        height: 80px;
+
+    }
+}
+
+@media (max-width: 379px){
+    #header { 
+        height: 100px;
+        margin-top: -20px;
+        padding-left:0;
+        padding-right:0;
+
+    }
 }
 
 .nav-link {
@@ -33,11 +67,36 @@ html, body {
 #main_logo {
     padding-top: 35px;
     padding-left: 20px;
+    z-index: 99999;
 }
 
 #main_logo img {
     width: 80px;
     height: auto;
+}
+
+@media (max-width: 1023px){
+    #main_logo img { 
+        width: 80px; 
+    }
+}
+
+@media (max-width: 767px){
+    #main_logo img { 
+        width: 80px;
+
+    }
+}
+
+@media (max-width: 479px){
+    #main_logo img { 
+        width: 70px;
+
+    }
+}
+
+.dropdown-menu{
+    position:absolute;
 }
 
 .nav-item {
@@ -47,6 +106,191 @@ html, body {
 .nav-width {
     width: 120px;
 }
+
+
+/* hamburger menu and language changer for responsive*/
+#langham {
+    width:50%;
+}
+
+#language_sm {
+    display: inline-block;
+}
+
+#hamburger {
+    display: inline-block;
+    position:relative;
+}
+.nav-item2 {
+    position: relative;
+    list-style: none;
+    color:black;
+    
+}
+
+.nav-item2 .nav-link2{
+    color: black;
+    list-style: none;
+}
+
+
+@media(min-width: 767px){
+    #language_sm {
+     display: none;
+ }
+}
+
+/* menu for responsive end*/
+#burger_menu{
+    background-color:white;
+    position: absolute;
+    z-index: 999999999;
+    top:0;
+    left:0;
+    margin-top:4000px;
+    width:770px;
+    height: 1391px;
+    
+}
+
+@media (min-width:767px){
+    #burger_menu{
+        display: none;
+    }
+}
+
+@media (max-width:375px){
+    #burger_menu{
+        height:1500px;
+    }
+}
+
+#burger_menu {
+    width: 100%;
+}
+
+#burger_menu2 {
+    width: 85%;
+    margin: auto;
+    margin-top: 200px;
+
+}
+
+#exit_button{
+    width: 100%;
+    display:block;
+    text-align: right;
+    padding-right: 100px;
+    padding-top:30px;
+    font-size:50px;
+}
+
+@media (max-width:375px){
+    #exit_button{
+        padding-right: 50px;
+    }
+}
+
+
+#exit_button a {
+    color:black;
+    font-family: helvetica;
+    font-weight:100;
+}
+
+#burger_about {
+    width:100%;
+    font-size: 70px;
+    padding-left: 100px;
+}
+
+@media (max-width:375px){
+    #burger_about{
+       font-size:45px;
+       padding-left:50px;
+       position: relative;
+       bottom:120px;
+   }
+}
+
+#burger_about a{
+    color: black;
+    font-family: helvetica;
+    font-weight: 530;
+    letter-spacing: 1px; 
+}
+
+#burger_work {
+    width:100%;
+    font-size: 70px;
+    padding-left: 100px;
+}
+
+@media (max-width:375px){
+    #burger_work{
+       font-size:50px;
+       padding-left:45px; 
+       position: relative;
+       bottom:120px;
+   }
+}
+
+#burger_work a{
+    color: black;
+    font-family: helvetica;
+    font-weight: 530;
+    letter-spacing: 1px; 
+}
+
+#burger_contact {
+    width:100%;
+    font-size: 70px;
+    padding-left: 100px;
+}
+
+@media (max-width:375px){
+    #burger_contact{
+       font-size:50px;
+       padding-left:45px; 
+       position: relative;
+       bottom:120px;
+   }
+}
+
+#burger_contact a {
+    color: black;
+    font-family: helvetica;
+    font-weight: 530;
+    letter-spacing: 1px; 
+}
+
+#burger_icon {
+    margin: auto;
+    position: absolute;
+    right: 50px;
+    bottom: 500px;
+    width: 50%;
+    text-align: right;
+}
+
+@media (max-width:375px){
+    #burger_icon{
+        top:470px;
+        right: 20px;
+    }
+}
+
+#burger_icon li {
+    list-style: none;
+    display: inline-block;
+}
+
+#burger_icon li a {
+    color:black;
+    font-size: 50px;
+}
+/********** burger finished**************/
+
 
 #icon_dropdown {
     width: 141px;
@@ -76,6 +320,8 @@ html, body {
     overflow: hidden;
     position: relative;
 }
+/*Ring image---------------------*/
+
 
 #content_img {
     position: absolute;
@@ -83,10 +329,29 @@ html, body {
     top: 50px;
 }
 
+@media (max-width:379px){
+    #content_img {
+        right: -130px;
+        top:350px;
+        
+    }
+}
+
+
 #content_img img {
     width: 550px;
     height: 550px;
 }
+
+@media (max-width:379px){
+    #content_img img{
+        width:300px;
+        height:300px;
+    }
+}
+/*Ring image finished---------------------*/
+
+/******big number******/
 
 #project01 {
     font-family: helvetica;
@@ -95,7 +360,19 @@ html, body {
     position: relative;
     left: -75px;
     top: -60px;
+
 }
+
+@media (max-width:379px){
+    #project01{
+        font-size: 160px;
+        left: 0px;
+        top: -30px;
+        left: -40px;
+    }
+}
+
+/******big number ends******/
 
 /* Project1 */
 #project1 {
@@ -103,7 +380,18 @@ html, body {
     position: absolute;
     left: 300px;
     top: 185px;
+    z-index: 10;
 }
+
+@media (max-width:379px){
+    #project1{
+        width:300px;
+        left: 50px;
+        top: 180px;
+    }
+}
+
+
 
 #project1 h1 {
     font-size: 50px;
@@ -113,16 +401,39 @@ html, body {
     font-family: helvetica neue;
 }
 
+@media (max-width:379px){
+    #project1 h1{
+        font-size: 35px;
+    }
+}
+
+
 #project1_line {
     width: 130px;
     border-top: solid 1.5px black;
        
 }
 
+
+@media(max-width: 379px){
+#project1_line {
+    width: 80px;
+    /*font-weight: bold;*/
+}
+}
+
 #project1_content1 {
     width: 100%;
     padding-top: 20px;
     /*font-weight: bold;*/
+}
+
+@media(max-width: 379px){
+#project1_content1 {
+    width: 100%;
+    padding-top: 12px;
+    /*font-weight: bold;*/
+}
 }
 
 

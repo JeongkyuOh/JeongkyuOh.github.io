@@ -30,145 +30,208 @@
  				<a id="main_logo" class="navbar-brand" href="index.html">
  					<img src="img/Jeongkyulogo2.png">
  				</a>
- 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
- 				aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
- 				<span class="navbar-toggler-icon"></span>
- 			</button>
-
- 			<div class="collapse navbar-collapse" id="navbarSupportedContent-4">
- 				<ul class="navbar-nav ml-auto">
- 					<li class="nav-item">
- 						<a class="nav-link nav-width" href="index_kr.html">About
- 							<span class="sr-only"></span>
- 						</a>
- 					</li>
- 					<li class="nav-item ">
- 						<a class="nav-link nav-width" href="works_kr.html">Work
- 							<div id="underline"></div>
- 							<span class="sr-only"></span>
- 						</a>
- 					</li>
- 					<li class="nav-item ">
- 						<a class="nav-link nav-width" href="contact_kr.html">Contact
- 							<span class="sr-only"></span>
- 						</a>
- 					</li>
-
- 					<!-- Icon dropdown -->
- 					<div id="icon_dropdown">
- 						<!-- Dropdown for EN/KO change -->
- 						<li class="nav-item dropdown">
- 							<a
- 							class="nav-link dropdown-toggle"
- 							href="works.html"
- 							id="navbarDropdown"
- 							role="button"
- 							data-toggle="dropdown"
- 							aria-expanded="false"
- 							>
- 							<i class="kr flag"></i>
- 						</a>
- 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
- 							<li>
- 								<a class="dropdown-item" href="works.html"
- 								><i class="kr flag"></i>한글
- 								<i class="fa fa-check text-success ml-2"></i
- 									></a>
- 								</li>
- 								<li><hr class="dropdown-divider" /></li>
- 								<li>
- 									<a class="dropdown-item" href="project1.html"><i class="uk flag"></i>English</a>
- 								</li>
- 							</ul>
- 						</li>
- 						<li class="nav-item">
- 							<a class="nav-link" href="https://www.linkedin.com/in/jeongkyu-oh-25b47612b/">
- 								<i class="fab fa-linkedin"></i></a>
- 							</li>
- 							<li class="nav-item">
- 								<a class="nav-link" href="https://github.com/users/JeongkyuOh/projects/1">
- 									<i class="fab fa-github"></i></a>
- 								</li>
-              </div>
-              <!-- icon and dropdown finished  -->
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <section id="content">
-        <div id="project01">01</div>
-        <div id="phone_image">
-          <div id="phone_image1">
-           <img src="img/project1_img/index1.png">
-         </div>
-         <div id="phone_image2">
-          <img src="img/project1_img/index2.png">
-        </div>
+         <!-- 햄버거와 언어선택지 -->
+         <div id="lang_ham">
+          <div id="language_sm">
+           <li class="nav-item2 dropdown2">
+            <a
+            class="nav-link2 dropdown-toggle"
+            href="index.html"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false">
+            <i class="uk flag"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="index.html">
+                <i class="united kingdom flag"></i>English
+                <i class="fa fa-check text-success ml-2"></i>
+              </a>
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="index_kr.html"><i class="kr flag"></i>한글</a>
+            </li>
+          </ul>
+        </li>
       </div>
-      <div id="project1">
-       <h1>웰컴 Wellcom</h1>
-       <div id="project1_line"></div>
-       <p id="project1_content1">
-        Wellcom 은 모바일웹으로 제작된 PC 온라인 쇼핑몰입니다.<br>단품상품과 조립상품을 취급하는 컨셉이고, 여타 쇼핑몰사이트에서 제공하는 기본기능들을 추가로 구현했습니다.<br>
-        Wellcom 은 Well + Computer 로, 좋은 컴퓨터를 고객들께 제공하는 쇼핑몰이라는 의미로 작명하였습니다. 
-      </p>
+      <!-- 햄버거메뉴 넣기(responsive burger icon menu) -->
+      <div id="hamburger">
+        <button class="burger navbar-toggler" type="button"
+        aria-expanded="false" aria-label="Toggle navigation" data-target="#navbarSupportedContent-4">
+        <span class="navbar-toggler-icon">
+        </span>
+      </button>
     </div>
+  </div>
+  <!-- 햄버거와 언어 선택모양 끝 (responsive menu burger icon finished)-->
+  <!-- menu start -->
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+   <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+     <a class="nav-link nav-width" href="index_kr.html">About
+      <span class="sr-only"></span>
+    </a>
+  </li>
+  <li class="nav-item ">
+   <a class="nav-link nav-width" href="works_kr.html">Work
+    <div id="underline"></div>
+    <span class="sr-only"></span>
+  </a>
+</li>
+<li class="nav-item ">
+ <a class="nav-link nav-width" href="contact_kr.html">Contact
+  <span class="sr-only"></span>
+</a>
+</li>
+
+<!-- Icon dropdown -->
+<div id="icon_dropdown">
+ <!-- Dropdown for EN/KO change -->
+ <li class="nav-item dropdown">
+  <a
+  class="nav-link dropdown-toggle"
+  href="works.html"
+  id="navbarDropdown"
+  role="button"
+  data-toggle="dropdown"
+  aria-expanded="false"
+  >
+  <i class="kr flag"></i>
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+  <li>
+   <a class="dropdown-item" href="works.html"
+   ><i class="kr flag"></i>한글
+   <i class="fa fa-check text-success ml-2"></i
+    ></a>
+  </li>
+  <li><hr class="dropdown-divider" /></li>
+  <li>
+    <a class="dropdown-item" href="project1.html"><i class="uk flag"></i>English</a>
+  </li>
+</ul>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="https://www.linkedin.com/in/jeongkyu-oh-25b47612b/">
+   <i class="fab fa-linkedin"></i></a>
+ </li>
+ <li class="nav-item">
+   <a class="nav-link" href="https://github.com/users/JeongkyuOh/projects/1">
+    <i class="fab fa-github"></i></a>
+  </li>
+</div>
+<!-- icon and dropdown finished  -->
+</ul>
+</div>
+<!-- menu finished  -->
+<!-- burger menu  -->
+<div id="burger_menu">
+  <span id="exit_button">
+    <a id="exit" href="#">x</a>
+  </span>
+  <div id="burger_menu2">
+    <div id="burger_about">
+      <a href="index.html">About</a>
+    </div>
+    <div id="burger_work">
+      <a href="works.html">Work</a>
+    </div>
+    <div id="burger_contact">
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div id="burger_icon">
+    <li class="nav-item nav-width2">
+      <a class="nav-link nav-width1 nav-width2" href="https://www.linkedin.com/in/jeongkyu-oh-25b47612b/">
+        <i class="fab fa-linkedin"></i></a>
+      </li>
+      <li class="nav-item nav-width2">
+        <a class="nav-link" href="https://github.com/users/JeongkyuOh/projects/1">
+          <i class="fab fa-github"></i></a>
+        </li>
+      </div>
+    </div>
+    <!-- burger menu -->
+  </nav>
+</header>
+<section id="content">
+  <div id="project01">01</div>
+  <div id="phone_image">
+    <div id="phone_image1">
+     <img src="img/project1_img/index1.png">
+   </div>
+   <div id="phone_image2">
+    <img src="img/project1_img/index2.png">
+  </div>
+</div>
+<div id="project1">
+ <h1>웰컴 Wellcom</h1>
+ <div id="project1_line"></div>
+ <p id="project1_content1">
+  Wellcom 은 모바일웹으로 제작된 PC 온라인 쇼핑몰입니다.<br>단품상품과 조립상품을 취급하는 컨셉이고, 여타 쇼핑몰사이트에서 제공하는 기본기능들을 추가로 구현했습니다.<br>
+  Wellcom 은 Well + Computer 로, 좋은 컴퓨터를 고객들께 제공하는 쇼핑몰이라는 의미로 작명하였습니다. 
+</p>
+</div>
 
 
-    <div id="content1">
-     <!-- slider wrapper start-->
-     <div class="container1">
-      <ul class="slider_container simple-list" id="slider">
-        <li class="slide">
-          <div class="slide_image">
-            <img src="img/project1_img/my_page.png">
-          </div>
-          <div class="slide_contents">
-            <h3><b>마이페이지</b></h3>
-            <p>
-              마이페이지의 홈 화면입니다.<br>
-              본 프로젝트에서는 마이페이지의 <b>'나의 주문', '회원정보', '나의 지갑'</b> 의<br>
-              레이아웃 및 기능을 구현하는 업무를 맡아 진행하였습니다.
-            </p>
-          </div>
-        </li>
-        <li class="slide">
-          <div class="slide_image">
-            <img src="img/project1_img/my_order1.png">
-            <img src="img/project1_img/my_order2.png">
-          </div>
-          <div class="slide_contents">
-            <h3><b>나의 주문</b></h3>
-            <p>
-              나의 주문 화면에서는 주문의 결제 상태, 배송상태 등이 확인 가능하며,<br>지금까지의 모든 주문 내역의 확인이 가능합니다.<br>날짜 선택기를 통해 일정 날짜의 주문을 확인할 수 있고,<br>운송사의 배송추적 링크와 상품문의 링크를 연결해 사용자 편의성을 높였습니다.
-            </p>
-          </div>
-        </li>
-        <li class="slide">
-          <div class="slide_image">
-            <img src="img/project1_img/my_account1.png">
-            <img src="img/project1_img/my_account2.png">
-          </div>
-          <div class="slide_contents">
-            <h3><b>회원정보</b></h3>
-            <p>
-              사용자가 자신의 계정 정보를 관리/수정할 수 있는 회원 정보 화면입니다. 데이터베이스에 저장된 사용자의 정보를 불러와서 보여주고, 사용자가 내용을 수정하면 데이터베이스의 정보가 업데이트됩니다.<br>주소 검색 기능은 다음-카카오의 오픈 API를 사용하였습니다.
-            </p>
-          </div>
-        </li>
-        <li class="slide">
-          <div class="slide_image">
-            <img src="img/project1_img/my_wallet1.png">
-            <img src="img/project1_img/my_wallet2.png">
-          </div>
-          <div class="slide_contents">
-            <h3><b>나의 지갑</b></h3>
-            <p>
-              사용자가 주문 시 사용했던 카드 정보를 데이터베이스에 저장하여 보여주는 화면입니다.<br>
-              저장된 카드 정보의 관리/수정 및 삭제가 가능합니다.  
-            </p>
-          </div>
-        </li>
+<div id="content1">
+ <!-- slider wrapper start-->
+ <div class="container1">
+  <ul class="slider_container simple-list" id="slider">
+    <li class="slide">
+      <div class="slide_image">
+        <img src="img/project1_img/my_page.png">
+      </div>
+      <div class="slide_contents">
+        <h3><b>마이페이지</b></h3>
+        <p>
+          마이페이지의 홈 화면입니다.<br>
+          본 프로젝트에서는 마이페이지의 <b>'나의 주문', '회원정보', '나의 지갑'</b> 의<br>
+          레이아웃 및 기능을 구현하는 업무를 맡아 진행하였습니다.
+        </p>
+      </div>
+    </li>
+    <li class="slide">
+      <div class="slide_image">
+        <img src="img/project1_img/my_order1.png">
+        <img src="img/project1_img/my_order2.png">
+      </div>
+      <div class="slide_contents">
+        <h3><b>나의 주문</b></h3>
+        <p>
+          나의 주문 화면에서는 주문의 결제 상태, 배송상태 등이 확인 가능하며,<br>지금까지의 모든 주문 내역의 확인이 가능합니다.<br>날짜 선택기를 통해 일정 날짜의 주문을 확인할 수 있고,<br>운송사의 배송추적 링크와 상품문의 링크를 연결해 사용자 편의성을 높였습니다.
+        </p>
+      </div>
+    </li>
+    <li class="slide">
+      <div class="slide_image">
+        <img src="img/project1_img/my_account1.png">
+        <img src="img/project1_img/my_account2.png">
+      </div>
+      <div class="slide_contents">
+        <h3><b>회원정보</b></h3>
+        <p>
+          사용자가 자신의 계정 정보를 관리/수정할 수 있는 회원 정보 화면입니다. 데이터베이스에 저장된 사용자의 정보를 불러와서 보여주고, 사용자가 내용을 수정하면 데이터베이스의 정보가 업데이트됩니다.<br>주소 검색 기능은 다음-카카오의 오픈 API를 사용하였습니다.
+        </p>
+      </div>
+    </li>
+    <li class="slide">
+      <div class="slide_image">
+        <img src="img/project1_img/my_wallet1.png">
+        <img src="img/project1_img/my_wallet2.png">
+      </div>
+      <div class="slide_contents">
+        <h3><b>나의 지갑</b></h3>
+        <p>
+          사용자가 주문 시 사용했던 카드 정보를 데이터베이스에 저장하여 보여주는 화면입니다.<br>
+          저장된 카드 정보의 관리/수정 및 삭제가 가능합니다.  
+        </p>
+      </div>
+    </li>
             <!-- <li class="slide">
               <img src="img/project1_img/design.png">
               <h3>메인페이지5</h3>
@@ -291,30 +354,49 @@ mybutton = document.getElementById("myBtn");
 $(function() {
             // 페이지 실행 후 즉시 1초동안
             $("#project1 h1").animateCSS('fadeInDown', {
-                duration: 2000
+              duration: 2000
             });
 
             // 페이지 실행 0.5초 후 0.8초동안
             $("#project1_line").animateCSS('fadeInLeft', {
-                duration: 2000,
+              duration: 2000,
                 // delay: 500
-            });
+              });
             // 페이지 실행 0.8초 후 1.3초동안
             $("#project1_content1").animateCSS('fadeInUp', {
-                duration: 2000,
+              duration: 2000,
                 // delay: 800
-            });
+              });
 
             $("#phone_image1").animateCSS('fadeInRight', {
-                duration: 2000,
+              duration: 2000,
                 // delay: 800
-            });
+              });
 
             // $("#phone_image2").animateCSS('fadeInDown', {
             //     duration: 2000,
             //     // delay: 800
             // });
-        });
+          });
+
+
+  //  햄버거메뉴 기능 시작
+  $(function(){
+    /* 햄버거메뉴 클릭*/
+
+    $('#hamburger').click(function(){
+     $('#burger_menu').animate({
+      marginTop:0
+    }, 500);
+   })
+
+    $('#exit').click(function(){
+      $('#burger_menu').animate({
+        marginTop:4000
+      }, 1000);
+    })
+
+  });
 
 
 

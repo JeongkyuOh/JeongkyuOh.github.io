@@ -463,6 +463,19 @@ html, body {
     z-index: 10;
 }
 
+@media(max-width: 379px){
+#phone_image1 {
+    width: 210px;
+    height: 410px;
+    padding-top: 12px;
+    left: 5%;
+    top: 250px;
+    /*font-weight: bold;*/
+    z-index: 11;
+}
+}
+
+
 #phone_image2 {
     width: 210px;
     height: 410px;
@@ -472,6 +485,18 @@ html, body {
     position: absolute;
     top: -50px;
     right:380px;
+}
+
+@media(max-width: 379px){
+#phone_image2 {
+    width: 210px;
+    height: 410px;
+    padding-top: 12px;
+    right: 5%;
+    top: 200px;
+    /*font-weight: bold;*/
+    z-index: 10;
+}
 }
 
 #phone_image1 img {

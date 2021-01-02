@@ -418,6 +418,7 @@ html, body {
     opacity: 0;
     font-weight:300;
     vertical-align: bottom;
+    z-index: 1000;
 }
 
 
@@ -434,7 +435,7 @@ html, body {
         font-family: helvetica neue;
         letter-spacing: 0px;
         left: 0px;
-        bottom:11px;
+        bottom:5px;
         opacity: 0;
     }
 }
@@ -470,6 +471,7 @@ html, body {
     #project1_sub:hover{
         opacity:1;
         left: 0px;
+        bottom:5px;
         -webkit-transition: all 1.5s;
 
     }
@@ -541,6 +543,7 @@ html, body {
     bottom: -10px;
     left: -15px;
     opacity: 0;
+    z-index: 1000;
     /*left: 35px;*/
 }
 
@@ -558,7 +561,7 @@ html, body {
         font-family: helvetica neue;
         letter-spacing: 0px;
         left: 0px;
-        bottom:11px;
+        bottom:5px;
         opacity: 0;
     }
 }
@@ -592,6 +595,7 @@ html, body {
 @media (max-width:1023px){
     #project2_sub:hover{
         left: 0px;
+        bottom:5px;
     }
 }
 
@@ -658,6 +662,7 @@ html, body {
     left: -15px;
     opacity: 0;
     font-weight: 300;
+    z-index: 1000;
     /*left: 35px;*/
 }
 
@@ -675,8 +680,9 @@ html, body {
         font-family: helvetica neue;
         letter-spacing: 0px;
         left: 0px;
-        bottom:11px;
+        bottom:5px;
         opacity: 0;
+        z-index: 1000;
     }
 }
 
@@ -702,13 +708,14 @@ html, body {
     bottom: 0px;
     opacity:1;
     left: 0px;
-    -webkit-transition: all 1s;
+    -webkit-transition: all 1.5s;
 
 }
 
 @media (max-width:1023px){
     #project3_sub:hover{
         left: 0px;
+        bottom:5px;
     }
 }
 

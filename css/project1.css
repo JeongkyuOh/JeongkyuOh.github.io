@@ -630,6 +630,7 @@ html, body {
     left: 0;
     right: 0;
     text-align: center;
+    z-index: 10;
 }
 
 .pager span {
@@ -640,6 +641,7 @@ html, body {
     display: inline-block;
     text-indent: -9999em;
     margin: 0 10px; 
+    
 }
 
 @media (max-width:375px){
@@ -663,7 +665,6 @@ html, body {
 @media (max-width:375px){
 #arrows {
     width:50%;
-    height:100%;
     position: relative;
     margin:auto;
     text-align:center;
@@ -699,7 +700,7 @@ html, body {
 @media (max-width:375px){
 #prev, #next {
     right:10%;
-    top: 28%;
+    top: 180px;
     left: 37%;
     transform: translateY(-50%);
     z-index: 999999;
@@ -724,22 +725,23 @@ html, body {
 
 @media (max-width:375px){
 #prev{
-    margin-left:-85%;
+    margin-left:-80%;
     padding-top:0;
+    font-size:35px;
 
 }
 }
 
 @media (max-width:330px){
 #prev{
-    margin-left:-90%;
+    margin-left:-80%;
  
 
 }
 }
 @media (max-width:290px){
 #prev{
-    margin-left:-95%;
+    margin-left:-90%;
  
 
 }
@@ -762,12 +764,20 @@ html, body {
 #next{
     margin-left:85%;
       padding-top:0;
+       font-size:35px;
 }
 }
 
 @media (max-width:330px){
 #next{
     margin-left:85%;
+      
+}
+}
+
+@media (max-width:290px){
+#next{
+    margin-left:90%;
       
 }
 }

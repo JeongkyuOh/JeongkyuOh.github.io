@@ -22,7 +22,7 @@
  	<link href="css/addons/flag.min.css" rel="stylesheet">
   <!-- swipder CDN -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper.min.css">
 
 </head>
 <body>
@@ -106,15 +106,19 @@
 </a>
 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
   <li>
-   <a class="dropdown-item" href="project1.html"
-   ><i class="united kingdom flag"></i>English
-   <i class="fa fa-check text-success ml-2"></i
-    ></a>
-  </li>
-  <li><hr class="dropdown-divider" /></li>
-  <li>
-    <a class="dropdown-item" href="project1_kr.html"><i class="kr flag"></i>한글</a>
-  </li>
+   <a class="dropdown-item" href="project1.html">
+    <i class="united kingdom flag"></i>English
+    <i class="fa fa-check text-success ml-2"></i>
+  </a>
+</li>
+<li>
+  <hr class="dropdown-divider" />
+</li>
+<li>
+  <a class="dropdown-item" href="project1_kr.html">
+    <i class="kr flag"></i>한글
+  </a>
+</li>
 </ul>
 </li>
 <li class="nav-item">
@@ -253,7 +257,7 @@
         </div>
         <!-- slider wrapper end -->
         <div id="makeitmove">
-          
+
         </div>
       </div>
 
@@ -405,36 +409,36 @@ let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
-const slider_container = document.getElementById('slider');
+const slider_container = document.querySelector('.slide');
 
 slider_container.addEventListener('touchstart', function(event) {
-    touchstartX = event.changedTouches[0].screenX;
-    touchstartY = event.changedTouches[0].screenY;
+  touchstartX = event.changedTouches[0].screenX;
+  touchstartY = event.changedTouches[0].screenY;
 }, false);
 
 slider_container.addEventListener('touchend', function(event) {
-    touchendX = event.changedTouches[0].screenX;
-    touchendY = event.changedTouches[0].screenY;
-    handleGesture();
+  touchendX = event.changedTouches[0].screenX;
+  touchendY = event.changedTouches[0].screenY;
+  handleGesture();
 }, false); 
 
-function handleGesture() {
-    if (touchendX < touchstartX) {
-        console.log('Swiped left');
-    }
-    
-    if (touchendX > touchstartX) {
-        console.log('Swiped right');
-    }
+function handleGesture() { 
+  if (touchendX < touchstartX) {
+    console.log('Swiped left');
+  }
+
+  if (touchendX > touchstartX) {
+    console.log('Swiped right');
+  }
 }
 
 
 
   // swiper
 
-  var mySwiper = new Swiper('.slider_container', {
+  var mySwiper = new Swiper('.slide', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal',
   loop: true,
 })
 

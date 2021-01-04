@@ -705,10 +705,12 @@ html, body {
     transform: translateY(-50%);
     z-index: 999999;
     display: inline-block;
-    height: 1em;
-    width: 1em;
+    height: 1.5em;
+    width: 1.5em;
     border-radius: 50%;
-
+    background-position: center center;
+    vertical-align: middle;
+    margin-top:-10px;
 }
 }
 
@@ -734,7 +736,7 @@ html, body {
 
 @media (max-width:330px){
 #prev{
-    margin-left:-80%;
+    margin-left:-85%;
  
 
 }
@@ -762,7 +764,7 @@ html, body {
 
 @media (max-width:375px){
 #next{
-    margin-left:85%;
+    margin-left:79%;
       padding-top:0;
        font-size:35px;
 }
@@ -770,14 +772,14 @@ html, body {
 
 @media (max-width:330px){
 #next{
-    margin-left:85%;
+    margin-left:78%;
       
 }
 }
 
 @media (max-width:290px){
 #next{
-    margin-left:90%;
+    margin-left:79%;
       
 }
 }

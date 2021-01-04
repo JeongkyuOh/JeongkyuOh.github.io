@@ -405,7 +405,7 @@ let touchstartY = 0;
 let touchendX = 0;
 let touchendY = 0;
 
-const slider_container = document.getElementById('slider_container');
+const slider_container = document.getElementById('slider');
 
 slider_container.addEventListener('touchstart', function(event) {
     touchstartX = event.changedTouches[0].screenX;
@@ -425,18 +425,6 @@ function handleGesture() {
     
     if (touchendX > touchstartX) {
         console.log('Swiped right');
-    }
-    
-    if (touchendY < touchstartY) {
-        console.log('Swiped up');
-    }
-    
-    if (touchendY > touchstartY) {
-       console.log('Swiped down');
-    }
-    
-    if (touchendY === touchstartY) {
-       console.log('Tap');
     }
 }
 
